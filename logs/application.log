@@ -1,0 +1,144 @@
+2018-03-13 12:35:45,159 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2018-03-13 12:35:45,855 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:35:48,716 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:35:49,073 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:35:49,088 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2018-03-13 12:39:24,395 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2018-03-13 12:39:24,690 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-37 - Creating Pool for datasource 'default'
+2018-03-13 12:39:24,736 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-37 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:39:25,508 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-37 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:39:25,615 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-37 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:39:25,616 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-37 - Application started (Dev)
+2018-03-13 12:40:04,415 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2018-03-13 12:40:04,640 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-41 - Creating Pool for datasource 'default'
+2018-03-13 12:40:04,718 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-41 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:40:05,424 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-41 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:40:05,532 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-41 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:40:05,533 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-41 - Application started (Dev)
+2018-03-13 12:41:30,271 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2018-03-13 12:41:30,505 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-47 - Creating Pool for datasource 'default'
+2018-03-13 12:41:30,559 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-47 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:41:31,235 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-47 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:41:31,333 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-47 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:41:31,333 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-47 - Application started (Dev)
+2018-03-13 12:42:05,704 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2018-03-13 12:42:05,945 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-12 - Creating Pool for datasource 'default'
+2018-03-13 12:42:06,013 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-12 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:42:06,693 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-12 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:42:06,780 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:42:06,780 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-12 - Application started (Dev)
+2018-03-13 12:44:11,196 [INFO] from application in application-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2018-03-13 12:44:11,450 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-62 - Creating Pool for datasource 'default'
+2018-03-13 12:44:11,506 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-62 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:44:12,263 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-62 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:44:12,359 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-62 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:44:12,362 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-62 - Application started (Dev)
+2018-03-13 12:45:07,826 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2018-03-13 12:45:08,055 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-49 - Creating Pool for datasource 'default'
+2018-03-13 12:45:08,102 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-49 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:45:08,808 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-49 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:45:08,897 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-49 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:45:08,898 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-49 - Application started (Dev)
+2018-03-13 12:49:03,556 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2018-03-13 12:49:03,751 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-77 - Creating Pool for datasource 'default'
+2018-03-13 12:49:03,807 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-77 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:49:04,394 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-77 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:49:04,467 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-77 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:49:04,467 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-77 - Application started (Dev)
+2018-03-13 12:50:32,892 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2018-03-13 12:50:33,066 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-84 - Creating Pool for datasource 'default'
+2018-03-13 12:50:33,135 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-84 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:50:33,752 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-84 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:50:33,823 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-84 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:50:33,826 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-84 - Application started (Dev)
+2018-03-13 12:50:55,701 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2018-03-13 12:50:55,858 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-82 - Creating Pool for datasource 'default'
+2018-03-13 12:50:55,917 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-82 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:50:56,526 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-82 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:50:56,591 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-82 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:50:56,591 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-82 - Application started (Dev)
+2018-03-13 12:56:20,838 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2018-03-13 12:56:21,008 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-96 - Creating Pool for datasource 'default'
+2018-03-13 12:56:21,041 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-96 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:56:21,693 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-96 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:56:21,768 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-96 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:56:21,770 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-96 - Application started (Dev)
+2018-03-13 12:57:17,981 [INFO] from application in application-akka.actor.default-dispatcher-13 - Shutting down connection pool.
+2018-03-13 12:57:18,203 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-95 - Creating Pool for datasource 'default'
+2018-03-13 12:57:18,267 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-95 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:57:18,999 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-95 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:57:19,096 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-95 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:57:19,100 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-95 - Application started (Dev)
+2018-03-13 12:57:31,592 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2018-03-13 12:57:31,764 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-101 - Creating Pool for datasource 'default'
+2018-03-13 12:57:31,839 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-101 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-03-13 12:57:32,678 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-101 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-13 12:57:32,761 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-101 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-13 12:57:32,761 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-101 - Application started (Dev)
+2018-03-13 12:59:58,053 [INFO] from play.core.server.AkkaHttpServer in pool-6-thread-2 - Stopping server...
+2018-03-13 12:59:58,067 [INFO] from application in application-akka.actor.default-dispatcher-13 - Shutting down connection pool.
