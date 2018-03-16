@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/media/sf_student/lab4/conf/routes
-// @DATE:Tue Mar 13 12:35:20 GMT 2018
+// @SOURCE:/home/wdd/webapps/bookishUniverse/conf/routes
+// @DATE:Fri Mar 16 12:26:55 GMT 2018
 
 
 package router {

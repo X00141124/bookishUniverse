@@ -1,6 +1,14 @@
-[0m[[0m[33mwarn[0m] [0m[0m/media/sf_student/lab4/app/views/login.scala.html:12:28: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/views/login.scala.html:12:28: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
 [0m[[0m[33mwarn[0m] [0m[0m                @loginForm.globalError.message;[0m
 [0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[0minfo[0m] [0m[0m/media/sf_student/lab4/app/controllers/AdminProductCtrl.java: Some input files use unchecked or unsafe operations.[0m
-[0m[[0m[0minfo[0m] [0m[0m/media/sf_student/lab4/app/controllers/AdminProductCtrl.java: Recompile with -Xlint:unchecked for details.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/HomeController.java:67:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable usersPage[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            return ok(usersPage.render(userList, User.getUserById(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/LoginController.java:43:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method index(int)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable HomeController of type controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        return redirect(controllers.routes.HomeController.index(0));[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/AdminProductCtrl.java: Some input files use unchecked or unsafe operations.[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/AdminProductCtrl.java: Recompile with -Xlint:unchecked for details.[0m

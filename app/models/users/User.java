@@ -92,6 +92,24 @@ public class User extends Model {
         }
     }
 
+    public static User getUserById(String id) {
+        if (id == null) {
+            return null;
+        }
+        else {
+            return find.byId(id);
+        }
+    }
+
+    public static List<String> options() {
+        List<String> options = new ArrayList<>();
+            options.add("admin");
+            options.add("manager");
+            options.add("user");
+        
+        
+        return options;
+    }
     
 
 }

@@ -12,8 +12,14 @@ GET     /productDetails/:id                 controllers.ProductCtrl.productDetai
 
 # Login form
 GET		/login						        controllers.security.LoginCtrl.login()
+GET     /login                              controllers.LoginController.login
 POST	/login						        controllers.security.LoginCtrl.loginSubmit()
 GET     /logout                             controllers.security.LoginCtrl.logout()
+
+# Register form
+GET     /usersPage                          controllers.HomeController.usersPage
+GET     /addUser                            controllers.HomeController.addUser
+POST    /addUserSubmit                      controllers.HomeController.addUserSubmit
 
 # Shopping
 GET     /showBasket                         controllers.ShoppingCtrl.showBasket()

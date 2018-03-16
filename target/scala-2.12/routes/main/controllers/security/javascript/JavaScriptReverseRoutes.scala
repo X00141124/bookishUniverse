@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/media/sf_student/lab4/conf/routes
-// @DATE:Tue Mar 13 12:35:20 GMT 2018
+// @SOURCE:/home/wdd/webapps/bookishUniverse/conf/routes
+// @DATE:Fri Mar 16 12:26:55 GMT 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -20,7 +20,7 @@ package controllers.security.javascript {
     }
 
   
-    // @LINE:15
+    // @LINE:16
     def loginSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.loginSubmit",
       """
@@ -30,7 +30,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:16
+    // @LINE:17
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.logout",
       """
