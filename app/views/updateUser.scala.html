@@ -1,0 +1,36 @@
+@(id: String, updateUserForm: Form[models.users.User], user: models.users.User, roleList: List[String])
+@import helper._
+
+@main("Update User",user) {
+    <p class="lead">Update User</p>
+    <div class="col-xs-5">
+    @form(action=routes.HomeController.updateUserSubmit(id), 
+    'class -> "form-horizontal", 
+    'role -> "form",
+    'enctype -> "multipart/form-data") {
+        @* CSRF attack prevention *@
+        @CSRF.formField
+
+        @inputText(updateUserForm("name"), '_label -> "Username", 'class -> "form-control")
+        @inputText(updateUserForm("email"), '_label -> "Email", 'class -> "form-control")
+        @if(user != null){
+            @if(user.getRole() == "admin"){
+                @select(
+        updateUserForm("role"), 
+        options(roleList), '_label -> "Role", '_default -> "-- Choose a role --", 
+        '_showConstraints -> false, 'class -> "form-control"
+        )
+        @inputPassword(updateUserForm("password"), '_label -> "Password", 'class -> "form-control")
+            }
+        }
+        
+        
+        <div class="actions">
+            <input type="submit" value="Update User" class="btn btn-primary">
+            <a href="@routes.HomeController.usersPage()">
+                <button type="button" class="btn btn-warning">Cancel</button>
+            </a>
+        </div>
+    }
+</div>
+}

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/bookishUniverse/conf/routes
-// @DATE:Fri Mar 16 12:26:55 GMT 2018
+// @SOURCE:C:/Users/yanik/Documents/bookishUniverse/conf/routes
+// @DATE:Tue Mar 20 00:29:01 GMT 2018
 
 
 package router {

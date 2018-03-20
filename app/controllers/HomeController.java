@@ -59,12 +59,55 @@ public class HomeController extends Controller {
 
             return redirect(controllers.routes.HomeController.usersPage());
         }
+        @Transactional
+        public Result updateUser(String id) {
+            User u;
+            Form<User> userForm;
+            List<String> roleList = User.options();
+    
+            try {
+                u = User.find.byId(id);
+                userForm = formFactory.form(User.class).fill(u);
+            } 
+            catch (Exception ex) {
+                return badRequest("error");
+            }
+            return ok(updateUser.render(id, userForm, User.getUserById(session().get("email")), roleList));
+        }
+        public Result updateUserSubmit(String id) {
+        
+           
+            Form<User> updateUserForm = formFactory.form(User.class).bindFromRequest();
+    
+            if (updateUserForm.hasErrors()) {
+                
+                List<String> roleList = User.options();
+                return badRequest(updateUser.render(id,updateUserForm, User.getUserById(session().get("email")), roleList));
+            }   
+                User u = updateUserForm.get();
+                u.setEmail(id);
+                u.update();    
+                flash("success", "User " + u.getName() + " has been  updated ");
+                
+                // Redirect to the index page
+                return redirect(controllers.routes.HomeController.usersPage());
+            }
+        @Security.Authenticated(Secured.class)
+        @With(AuthAdmin.class)
+        @Transactional
+        public Result deleteUser(String id) {
+            User.find.ref(id).delete();
+    
+            flash("success", "User has been deleted");
+            
+            return redirect(routes.HomeController.usersPage());
+        }
 
         @Security.Authenticated(Secured.class)
         @With(AuthAdmin.class)
         public Result usersPage() {
             List<User> userList = User.findAll();
-            return ok(usersPage.render(userList, User.getUserById(session().get("email"))));
+            return ok(usersPage.render(userList, User.getUserById(session().get("email")),e));
         }
 
 }
