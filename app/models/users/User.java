@@ -8,20 +8,12 @@ import play.data.format.*;
 import play.data.validation.*;
 
 @Entity
-//Specified mapped table name
-@Table(name = "user")
-//Map inherited class to a single table
-@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-//Discriminator column used to define user type
-@DiscriminatorColumn(name="role")
-//The user type is user
-@DiscriminatorValue("user")
 public class User extends Model {
     @Id
     private String email;
 
     @Constraints.Required
-    private String role;    
+    private String role = "user";    
 
     @Constraints.Required
     private String name;
@@ -31,13 +23,6 @@ public class User extends Model {
 
     public User() {
     }
-        // Constructor to initialise object
-        public  User(String email, String role, String name, String password) {
-            this.email = email;
-            this.role = role;
-            this.name = name;
-            this.password = password;
-        }
 
     public String getEmail() {
         return email;
@@ -82,7 +67,6 @@ public class User extends Model {
     public static User authenticate(String email, String password) {
         return find.query().where().eq("email", email).eq("password", password).findUnique();
     }
-
     public static User getLoggedIn(String id) {
         if (id == null) {
             return null;
@@ -110,6 +94,5 @@ public class User extends Model {
         
         return options;
     }
-    
 
 }

@@ -1,6 +1,46 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\yanik\Documents\bookishUniverse\app\views\login.scala.html:12:28: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/views/login.scala.html:12:28: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
 [0m[[0m[33mwarn[0m] [0m[0m                @loginForm.globalError.message;[0m
 [0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[0minfo[0m] [0m[0mNote: Some input files use unchecked or unsafe operations.[0m
-[0m[[0m[0minfo[0m] [0m[0mNote: Recompile with -Xlint:unchecked for details.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/AdminProductCtrl.java:53:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m		User u = User.getLoggedIn(session().get("email"));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/ProductCtrl.java:42:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m		User u = User.getLoggedIn(session().get("email"));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/ProductCtrl.java:80:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(productDetails.render(p,User.getLoggedIn(session().get("email")),e));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/ShoppingCtrl.java:44:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m		return (Customer)User.getLoggedIn(session().get("email"));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/ShoppingCtrl.java:76:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m        Customer customer = (Customer)User.getLoggedIn(session().get("email"));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/security/CheckIfAdmin.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m            User u = User.getLoggedIn(id);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/security/CheckIfCustomer.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m            User u = User.getLoggedIn(id);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/security/LoginCtrl.java:28:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(login.render(loginForm, User.getLoggedIn(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/security/LoginCtrl.java:39:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m            return badRequest(login.render(loginForm, User.getLoggedIn(session().get("email"))));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/security/LoginCtrl.java:49:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getLoggedIn(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.User[0m
+[0m[[0m[31merror[0m] [0m[0m            User u = User.getLoggedIn(loginForm.get().getEmail());[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/AdminProductCtrl.java: Some input files use unchecked or unsafe operations.[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/wdd/webapps/bookishUniverse/app/controllers/AdminProductCtrl.java: Recompile with -Xlint:unchecked for details.[0m

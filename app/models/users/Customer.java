@@ -29,15 +29,8 @@ public class Customer extends User{
 
     private List<ShopOrder> orders;
 	
-	public Customer(String email, String role, String name, String password, String street1, String street2, String town, String postCode, String creditCard)
-	{
-		super(email, role, name, password);
-        this.street1 = street1;
-        this.street2 = street2;
-        this.town = town;
-        this.postCode = postCode;
-		this.creditCard = creditCard;
-	}
+    public Customer(){
+    }
 
     public String getStreet1() {
         return street1;

@@ -1,5 +1,5 @@
 package controllers;
-
+import controllers.security.*;
 import play.mvc.*;
 
 import play.api.Environment;
@@ -49,11 +49,20 @@ public class HomeController extends Controller {
 
             if (newUserForm.hasErrors()){
                 List<String> roleList = User.options();
+                flash("failure", "Form error");
                 return badRequest(addUser.render(newUserForm, User.getUserById(session().get("email")), roleList));
             }
             else {
                 newUser = newUserForm.get();
-                newUser.save();
+                
+                    if(newUser.getRole() == null){
+                        newUser.setRole("user");
+                        newUser.save();
+                    }else{
+                        newUser.save();
+                    }
+                    
+
             }
             flash("success", "User " + newUser.getName() + " has been created");
 
@@ -93,7 +102,7 @@ public class HomeController extends Controller {
                 return redirect(controllers.routes.HomeController.usersPage());
             }
         @Security.Authenticated(Secured.class)
-        @With(AuthAdmin.class)
+        @With(CheckIfAdmin.class)
         @Transactional
         public Result deleteUser(String id) {
             User.find.ref(id).delete();
@@ -104,7 +113,7 @@ public class HomeController extends Controller {
         }
 
         @Security.Authenticated(Secured.class)
-        @With(AuthAdmin.class)
+        @With(CheckIfAdmin.class)
         public Result usersPage() {
             List<User> userList = User.findAll();
             return ok(usersPage.render(userList, User.getUserById(session().get("email")),e));

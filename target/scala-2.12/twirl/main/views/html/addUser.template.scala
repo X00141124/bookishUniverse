@@ -36,14 +36,14 @@ Seq[Any](format.raw/*1.86*/("""
 """),_display_(/*4.2*/main("Add User",user)/*4.23*/ {_display_(Seq[Any](format.raw/*4.25*/("""
     """),format.raw/*5.5*/("""<p class="lead">Join Us</p>
     <div class="col-xs-5">
-    """),_display_(/*7.6*/form(action=routes.HomeController.addUserSubmit(), 
+
+    """),_display_(/*8.6*/form(action=routes.HomeController.addUserSubmit(), 
     'class -> "form-horizontal", 
     'role -> "form",
-    'enctype -> "multipart/form-data")/*10.39*/ {_display_(Seq[Any](format.raw/*10.41*/("""
-        """),format.raw/*11.37*/("""
-        """),_display_(/*12.10*/CSRF/*12.14*/.formField),format.raw/*12.24*/("""
-        """),_display_(/*13.10*/inputText(userForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*13.82*/("""
-        """),_display_(/*14.10*/inputText(userForm("name"), '_label -> "Username", 'class -> "form-control")),format.raw/*14.86*/("""
+    'enctype -> "multipart/form-data")/*11.39*/ {_display_(Seq[Any](format.raw/*11.41*/("""
+        """),format.raw/*12.37*/("""
+        """),_display_(/*13.10*/CSRF/*13.14*/.formField),format.raw/*13.24*/("""
+        """),_display_(/*14.10*/inputText(userForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*14.82*/("""
         """),_display_(/*15.10*/inputText(userForm("email"), '_label -> "Email", 'class -> "form-control")),format.raw/*15.84*/("""
         """),_display_(/*16.10*/if(user != null)/*16.26*/{_display_(Seq[Any](format.raw/*16.27*/("""
             """),_display_(/*17.14*/if(user.getRole() == "admin")/*17.43*/{_display_(Seq[Any](format.raw/*17.44*/("""
@@ -80,11 +80,11 @@ Seq[Any](format.raw/*1.86*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 20 00:25:54 GMT 2018
-                  SOURCE: C:/Users/yanik/Documents/bookishUniverse/app/views/addUser.scala.html
-                  HASH: b502868b13515ee573ded6a2077bbbd999ad4e72
-                  MATRIX: 998->1|1155->88|1200->85|1228->105|1256->108|1285->129|1324->131|1356->137|1443->199|1600->347|1640->349|1678->387|1716->398|1729->402|1760->412|1798->423|1891->495|1929->506|2026->582|2064->593|2159->667|2197->678|2222->694|2261->695|2303->710|2341->739|2380->740|2426->759|2639->951|2685->966|2727->977|2765->988|2870->1072|2917->1092|3065->1213|3080->1219|3128->1246|3280->1368|3309->1370
-                  LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|39->7|42->10|42->10|43->11|44->12|44->12|44->12|45->13|45->13|46->14|46->14|47->15|47->15|48->16|48->16|48->16|49->17|49->17|49->17|50->18|54->22|55->23|56->24|57->25|57->25|59->27|61->29|61->29|61->29|65->33|66->34
+                  DATE: Tue Mar 20 12:55:54 GMT 2018
+                  SOURCE: /home/wdd/webapps/bookishUniverse/app/views/addUser.scala.html
+                  HASH: 378fe3e873997dbe1a5c9fbaad51af22822f8e8b
+                  MATRIX: 998->1|1155->87|1200->85|1227->103|1254->105|1283->126|1322->128|1353->133|1439->194|1593->339|1633->341|1670->378|1707->388|1720->392|1751->402|1788->412|1881->484|1918->494|2013->568|2050->578|2075->594|2114->595|2155->609|2193->638|2232->639|2277->657|2486->845|2531->859|2572->869|2609->879|2714->963|2759->981|2905->1100|2920->1106|2968->1133|3116->1251|3144->1252
+                  LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|40->8|43->11|43->11|44->12|45->13|45->13|45->13|46->14|46->14|47->15|47->15|48->16|48->16|48->16|49->17|49->17|49->17|50->18|54->22|55->23|56->24|57->25|57->25|59->27|61->29|61->29|61->29|65->33|66->34
                   -- GENERATED --
               */
           

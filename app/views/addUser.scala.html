@@ -4,6 +4,7 @@
 @main("Add User",user) {
     <p class="lead">Join Us</p>
     <div class="col-xs-5">
+
     @form(action=routes.HomeController.addUserSubmit(), 
     'class -> "form-horizontal", 
     'role -> "form",
@@ -11,7 +12,6 @@
         @* CSRF attack prevention *@
         @CSRF.formField
         @inputText(userForm("name"), '_label -> "Name", 'class -> "form-control")
-        @inputText(userForm("name"), '_label -> "Username", 'class -> "form-control")
         @inputText(userForm("email"), '_label -> "Email", 'class -> "form-control")
         @if(user != null){
             @if(user.getRole() == "admin"){
