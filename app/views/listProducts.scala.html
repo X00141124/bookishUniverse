@@ -40,7 +40,6 @@
           <th>Image</th>
           <th>ID</th>
           <th>Name</th>
-          <th>Description</th>
           <th>Stock</th>
           <th>Price</th>   
         </tr>
@@ -58,7 +57,6 @@
             <td><a href="@routes.ProductCtrl.productDetails(p.getId)">
                 @p.getName</td>
                </a>     
-            <td>@p.getDescription</td>
             <td  class="numeric">@p.getStock</td>
             <td  class="numeric">€ @("%.2f".format(p.getPrice))</td>
             <td><a href="@routes.ShoppingCtrl.addToBasket(p.getId)"  class="btn btn-default btn-xs"><span class="glyphicon glyphicon-shopping-cart"></span></a></td>

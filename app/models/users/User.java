@@ -13,7 +13,7 @@ public class User extends Model {
     private String email;
 
     @Constraints.Required
-    private String role = "user";    
+    private String role;    
 
     @Constraints.Required
     private String name;
@@ -21,7 +21,15 @@ public class User extends Model {
     @Constraints.Required
     private String password;
 
+
     public User() {
+    }
+
+    public  User(String email, String role, String name, String password) {
+        this.email = email;
+        this.role = role;
+        this.name = name;
+        this.password = password;
     }
 
     public String getEmail() {

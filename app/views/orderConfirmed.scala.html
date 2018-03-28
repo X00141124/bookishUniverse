@@ -23,7 +23,6 @@
 			<!-- The header row-->
 			<tr>
 				<th>Name</th>
-				<th>Description</th>
 				<th>Item Price</th>
 				<th>Quantity</th>
                 <th>Total</th>
@@ -35,7 +34,6 @@
                     @for(i <- order.getItems) {
                     <tr>
                         <td>@i.getProduct.getName</td>
-                        <td>@i.getProduct.getDescription</td>
                         <td>&euro; @("%.2f".format(i.getPrice))</td>
                         <td>@i.getQuantity()</td>
                         <td>&euro; @("%.2f".format(i.getItemTotal))</td>

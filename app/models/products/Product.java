@@ -14,11 +14,18 @@ public class Product extends Model {
         @Id
         private Long id;
         @Constraints.Required
-        private String name;
+        private String title;
         @ManyToMany(cascade = CascadeType.ALL,mappedBy="products")
         public List<Category> categories;
+
         @Constraints.Required
-        private String description; 
+        @ManyToOne
+        public Author author;
+
+        @Constraints.Required
+        @ManyToOne
+        public Publisher publisher;
+
         @Constraints.Required
         private int stock; 
         @Constraints.Required
@@ -33,25 +40,25 @@ public class Product extends Model {
             return Product.find.all();
         }
     // Find all Products in the database
-    // Filter product name 
+    // Filter product title 
     public static List<Product> findAll(String filter) {
         return Product.find.query().where()
-                        // name like filter value (surrounded by wildcards)
-                        .ilike("name", "%" + filter + "%")
+                        // title like filter value (surrounded by wildcards)
+                        .ilike("title", "%" + filter + "%")
                         .orderBy("id asc")
                         .findList();
     }
     
     // Find all Products for a category
-    // Filter product name 
+    // Filter product title 
     public static List<Product> findFilter(Long catID, String filter) {
         return Product.find.query().where()
                         // Only include products from the matching cat ID
                         // In this case search the ManyToMany relation
                         .eq("categories.id", catID)
-                        // name like filter value (surrounded by wildcards)
-                        .ilike("name", "%" + filter + "%")
-                        .orderBy("name asc")
+                        // title like filter value (surrounded by wildcards)
+                        .ilike("title", "%" + filter + "%")
+                        .orderBy("title asc")
                         .findList();
     }
         // Default Constructor
@@ -59,10 +66,11 @@ public class Product extends Model {
         }
     
         // Constructor to initialise object
-        public Product(Long id, String name, String description, int stock, double price) {
+        public Product(Long id, String title, Author author, Publisher publisher, int stock, double price) {
             this.id = id;
-            this.name = name;
-            this.description = description;
+            this.title = title;
+            this.author = author;
+            this.publisher = publisher;
             this.stock = stock;
             this.price = price;
         }
@@ -75,18 +83,11 @@ public class Product extends Model {
             this.id = id;
         }
         public String getName() {
-            return name;
+            return title;
         }
-        public void setName(String name) {
-            this.name = name;
+        public void setName(String title) {
+            this.title = title;
         }
-
-        public String getDescription() { 
-            return description; 
-        } 
-        public void setDescription(String description) { 
-            this.description = description; 
-        } 
         public int getStock() { 
             return stock; 
         } 
@@ -105,5 +106,18 @@ public class Product extends Model {
         public void setCatSelect(List<Long> catSelect){
             this.catSelect = catSelect;
         }
+        public Author getAuthor() {
+            return author;
+        }
+        public void setAuthor(Author author) {
+            this.author = author;
+        }
+        public Publisher getPublisher() {
+            return publisher;
+        }
+        public void setPublisher(Publisher publisher){
+            this.publisher = publisher;
+        }
+
     }
     

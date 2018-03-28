@@ -55,30 +55,28 @@ Seq[Any](format.raw/*1.69*/("""
 			<!-- The header row-->
 			<tr>
 				<th>Name</th>
-				<th>Description</th>
 				<th>Item Price</th>
 				<th>Quantity</th>
                 <th>Total</th>
 			</tr>
 			</thead>
 			<tbody>
-                """),_display_(/*33.18*/if(order != null)/*33.35*/ {_display_(Seq[Any](format.raw/*33.37*/("""
-                    """),format.raw/*34.21*/("""<!-- Start of For loop - For each p in products add a row -->
-                    """),_display_(/*35.22*/for(i <- order.getItems) yield /*35.46*/ {_display_(Seq[Any](format.raw/*35.48*/("""
-                    """),format.raw/*36.21*/("""<tr>
-                        <td>"""),_display_(/*37.30*/i/*37.31*/.getProduct.getName),format.raw/*37.50*/("""</td>
-                        <td>"""),_display_(/*38.30*/i/*38.31*/.getProduct.getDescription),format.raw/*38.57*/("""</td>
-                        <td>&euro; """),_display_(/*39.37*/("%.2f".format(i.getPrice))),format.raw/*39.64*/("""</td>
-                        <td>"""),_display_(/*40.30*/i/*40.31*/.getQuantity()),format.raw/*40.45*/("""</td>
-                        <td>&euro; """),_display_(/*41.37*/("%.2f".format(i.getItemTotal))),format.raw/*41.68*/("""</td>
+                """),_display_(/*32.18*/if(order != null)/*32.35*/ {_display_(Seq[Any](format.raw/*32.37*/("""
+                    """),format.raw/*33.21*/("""<!-- Start of For loop - For each p in products add a row -->
+                    """),_display_(/*34.22*/for(i <- order.getItems) yield /*34.46*/ {_display_(Seq[Any](format.raw/*34.48*/("""
+                    """),format.raw/*35.21*/("""<tr>
+                        <td>"""),_display_(/*36.30*/i/*36.31*/.getProduct.getName),format.raw/*36.50*/("""</td>
+                        <td>&euro; """),_display_(/*37.37*/("%.2f".format(i.getPrice))),format.raw/*37.64*/("""</td>
+                        <td>"""),_display_(/*38.30*/i/*38.31*/.getQuantity()),format.raw/*38.45*/("""</td>
+                        <td>&euro; """),_display_(/*39.37*/("%.2f".format(i.getItemTotal))),format.raw/*39.68*/("""</td>
                     </tr>
-                    """)))}),format.raw/*43.22*/("""<!-- End of For loop -->
-              """)))}),format.raw/*44.16*/("""
-			"""),format.raw/*45.4*/("""</tbody>
+                    """)))}),format.raw/*41.22*/("""<!-- End of For loop -->
+              """)))}),format.raw/*42.16*/("""
+			"""),format.raw/*43.4*/("""</tbody>
 		</table>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-right"><strong>Order Total: &euro; """),_display_(/*49.68*/("%.2f".format(order.getOrderTotal))),format.raw/*49.104*/("""</strong></p>
+                <p class="text-right"><strong>Order Total: &euro; """),_display_(/*47.68*/("%.2f".format(order.getOrderTotal))),format.raw/*47.104*/("""</strong></p>
             </div>  
         </div>
         </div>
@@ -99,11 +97,11 @@ Seq[Any](format.raw/*1.69*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 20 12:50:56 GMT 2018
+                  DATE: Wed Mar 28 15:06:12 IST 2018
                   SOURCE: /home/wdd/webapps/bookishUniverse/app/views/orderConfirmed.scala.html
-                  HASH: 3e5b4bbbc1a792a85e44ef6b31ed3dcf2ec4a6f7
-                  MATRIX: 998->1|1138->72|1174->102|1206->128|1260->68|1289->153|1316->154|1387->200|1431->236|1470->238|1500->241|1573->288|1614->320|1654->322|1687->328|1758->372|1772->377|1808->392|1841->398|1881->408|1913->413|2219->692|2245->709|2285->711|2334->732|2444->815|2484->839|2524->841|2573->862|2634->896|2644->897|2684->916|2746->951|2756->952|2803->978|2872->1020|2920->1047|2982->1082|2992->1083|3027->1097|3096->1139|3148->1170|3232->1223|3303->1263|3334->1267|3510->1416|3568->1452
-                  LINES: 28->1|31->4|32->5|33->6|36->1|39->7|40->8|41->9|41->9|41->9|44->12|47->15|47->15|47->15|48->16|49->17|49->17|49->17|50->18|51->19|53->21|65->33|65->33|65->33|66->34|67->35|67->35|67->35|68->36|69->37|69->37|69->37|70->38|70->38|70->38|71->39|71->39|72->40|72->40|72->40|73->41|73->41|75->43|76->44|77->45|81->49|81->49
+                  HASH: 1da5c7c93f480625930bdcb7f219ca62a6551f06
+                  MATRIX: 998->1|1138->72|1174->102|1206->128|1260->68|1289->153|1316->154|1387->200|1431->236|1470->238|1500->241|1573->288|1614->320|1654->322|1687->328|1758->372|1772->377|1808->392|1841->398|1881->408|1913->413|2194->667|2220->684|2260->686|2309->707|2419->790|2459->814|2499->816|2548->837|2609->871|2619->872|2659->891|2728->933|2776->960|2838->995|2848->996|2883->1010|2952->1052|3004->1083|3088->1136|3159->1176|3190->1180|3366->1329|3424->1365
+                  LINES: 28->1|31->4|32->5|33->6|36->1|39->7|40->8|41->9|41->9|41->9|44->12|47->15|47->15|47->15|48->16|49->17|49->17|49->17|50->18|51->19|53->21|64->32|64->32|64->32|65->33|66->34|66->34|66->34|67->35|68->36|68->36|68->36|69->37|69->37|70->38|70->38|70->38|71->39|71->39|73->41|74->42|75->43|79->47|79->47
                   -- GENERATED --
               */
           

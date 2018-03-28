@@ -63,7 +63,6 @@ Seq[Any](format.raw/*5.93*/("""
           <th>Image</th>
           <th>ID</th>
           <th>Name</th>
-          <th>Description</th>
           <th>Stock</th>
           <th>Price</th>
           <th colspan="2"></th>      
@@ -71,38 +70,37 @@ Seq[Any](format.raw/*5.93*/("""
       </thead>
 
       <tbody>
-        """),_display_(/*43.10*/for(p<-products) yield /*43.26*/ {_display_(Seq[Any](format.raw/*43.28*/("""
-          """),format.raw/*44.11*/("""<tr>
-              """),_display_(/*45.16*/if(env.resource("public/images/productImages/thumbnails/" + p.getId + ".jpg").isDefined)/*45.104*/ {_display_(Seq[Any](format.raw/*45.106*/("""
-                """),format.raw/*46.17*/("""<td><img src="/assets/images/productImages/thumbnails/"""),_display_(/*46.72*/(p.getId + ".jpg")),format.raw/*46.90*/(""""/></td>
-            """)))}/*47.15*/else/*47.20*/{_display_(Seq[Any](format.raw/*47.21*/("""
-                """),format.raw/*48.17*/("""<td><img src="/assets/images/productImages/thumbnails/noImage.jpg"/></td>
-            """)))}),format.raw/*49.14*/("""
-            """),format.raw/*50.13*/("""<td class="numeric">"""),_display_(/*50.34*/p/*50.35*/.getId),format.raw/*50.41*/("""</td>
-            <td><a href=""""),_display_(/*51.27*/routes/*51.33*/.ProductCtrl.productDetails(p.getId)),format.raw/*51.69*/("""">
-             """),_display_(/*52.15*/p/*52.16*/.getName),format.raw/*52.24*/("""</td>
+        """),_display_(/*42.10*/for(p<-products) yield /*42.26*/ {_display_(Seq[Any](format.raw/*42.28*/("""
+          """),format.raw/*43.11*/("""<tr>
+              """),_display_(/*44.16*/if(env.resource("public/images/productImages/thumbnails/" + p.getId + ".jpg").isDefined)/*44.104*/ {_display_(Seq[Any](format.raw/*44.106*/("""
+                """),format.raw/*45.17*/("""<td><img src="/assets/images/productImages/thumbnails/"""),_display_(/*45.72*/(p.getId + ".jpg")),format.raw/*45.90*/(""""/></td>
+            """)))}/*46.15*/else/*46.20*/{_display_(Seq[Any](format.raw/*46.21*/("""
+                """),format.raw/*47.17*/("""<td><img src="/assets/images/productImages/thumbnails/noImage.jpg"/></td>
+            """)))}),format.raw/*48.14*/("""
+            """),format.raw/*49.13*/("""<td class="numeric">"""),_display_(/*49.34*/p/*49.35*/.getId),format.raw/*49.41*/("""</td>
+            <td><a href=""""),_display_(/*50.27*/routes/*50.33*/.ProductCtrl.productDetails(p.getId)),format.raw/*50.69*/("""">
+             """),_display_(/*51.15*/p/*51.16*/.getName),format.raw/*51.24*/("""</td>
             </a>
      
-            <td>"""),_display_(/*55.18*/p/*55.19*/.getDescription),format.raw/*55.34*/("""</td>
-            <td  class="numeric">"""),_display_(/*56.35*/p/*56.36*/.getStock),format.raw/*56.45*/("""</td>
-            <td  class="numeric">€ """),_display_(/*57.37*/("%.2f".format(p.getPrice))),format.raw/*57.64*/("""</td>
+            <td  class="numeric">"""),_display_(/*54.35*/p/*54.36*/.getStock),format.raw/*54.45*/("""</td>
+            <td  class="numeric">€ """),_display_(/*55.37*/("%.2f".format(p.getPrice))),format.raw/*55.64*/("""</td>
             <td>
-              <a href=""""),_display_(/*59.25*/routes/*59.31*/.AdminProductCtrl.updateProduct(p.getId)),format.raw/*59.71*/("""" class="button xs btn-danger">
+              <a href=""""),_display_(/*57.25*/routes/*57.31*/.AdminProductCtrl.updateProduct(p.getId)),format.raw/*57.71*/("""" class="button xs btn-danger">
                 <span class="glyphicon glyphicon-pencil"></span>
               </a>
             </td>        <td>
-              <a href=""""),_display_(/*63.25*/routes/*63.31*/.AdminProductCtrl.deleteProduct(p.getId)),format.raw/*63.71*/("""" class="button xs btn-danger" onclick="return confirmDel();">
+              <a href=""""),_display_(/*61.25*/routes/*61.31*/.AdminProductCtrl.deleteProduct(p.getId)),format.raw/*61.71*/("""" class="button xs btn-danger" onclick="return confirmDel();">
                 <span class="glyphicon glyphicon-trash"></span>
               </a>
             </td>
           </tr>
-        """)))}),format.raw/*68.10*/("""
-      """),format.raw/*69.7*/("""</tbody>
+        """)))}),format.raw/*66.10*/("""
+      """),format.raw/*67.7*/("""</tbody>
 
     </table>
 
     <p>
-      <a href=""""),_display_(/*74.17*/routes/*74.23*/.AdminProductCtrl.addProduct()),format.raw/*74.53*/("""">
+      <a href=""""),_display_(/*72.17*/routes/*72.23*/.AdminProductCtrl.addProduct()),format.raw/*72.53*/("""">
         <button class="btn btn-primary">Add a product</button>
       </a>
     </p>
@@ -124,11 +122,11 @@ Seq[Any](format.raw/*5.93*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 20 12:50:56 GMT 2018
+                  DATE: Wed Mar 28 15:07:12 IST 2018
                   SOURCE: /home/wdd/webapps/bookishUniverse/app/views/productAdmin/listProducts.scala.html
-                  HASH: 6c9ff08631b2e451a70c6947aeacdb40ec9ec46a
-                  MATRIX: 664->2|703->35|741->67|1125->93|1311->184|1339->187|1368->208|1407->210|1435->212|1617->367|1632->373|1686->406|1764->458|1800->478|1840->480|1876->489|1913->499|1928->505|1988->544|2042->571|2052->572|2082->580|2121->591|2169->612|2179->613|2219->632|2277->660|2309->665|2452->782|2493->814|2533->816|2569->825|2641->870|2655->875|2691->890|2727->899|2771->913|2805->920|3096->1184|3128->1200|3168->1202|3207->1213|3254->1233|3352->1321|3393->1323|3438->1340|3520->1395|3559->1413|3600->1436|3613->1441|3652->1442|3697->1459|3815->1546|3856->1559|3904->1580|3914->1581|3941->1587|4000->1619|4015->1625|4072->1661|4116->1678|4126->1679|4155->1687|4228->1733|4238->1734|4274->1749|4341->1789|4351->1790|4381->1799|4450->1841|4498->1868|4572->1915|4587->1921|4648->1961|4845->2131|4860->2137|4921->2177|5141->2366|5175->2373|5250->2421|5265->2427|5316->2457
-                  LINES: 24->2|25->3|26->4|31->5|36->5|38->7|38->7|38->7|40->9|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|48->17|48->17|48->17|48->17|49->18|49->18|49->18|49->18|51->20|52->21|56->25|56->25|56->25|57->26|58->27|58->27|58->27|59->28|60->29|61->30|74->43|74->43|74->43|75->44|76->45|76->45|76->45|77->46|77->46|77->46|78->47|78->47|78->47|79->48|80->49|81->50|81->50|81->50|81->50|82->51|82->51|82->51|83->52|83->52|83->52|86->55|86->55|86->55|87->56|87->56|87->56|88->57|88->57|90->59|90->59|90->59|94->63|94->63|94->63|99->68|100->69|105->74|105->74|105->74
+                  HASH: 8544244154a3b75faf0dba6cf0ce7c09abe726bc
+                  MATRIX: 664->2|703->35|741->67|1125->93|1311->184|1339->187|1368->208|1407->210|1435->212|1617->367|1632->373|1686->406|1764->458|1800->478|1840->480|1876->489|1913->499|1928->505|1988->544|2042->571|2052->572|2082->580|2121->591|2169->612|2179->613|2219->632|2277->660|2309->665|2452->782|2493->814|2533->816|2569->825|2641->870|2655->875|2691->890|2727->899|2771->913|2805->920|3065->1153|3097->1169|3137->1171|3176->1182|3223->1202|3321->1290|3362->1292|3407->1309|3489->1364|3528->1382|3569->1405|3582->1410|3621->1411|3666->1428|3784->1515|3825->1528|3873->1549|3883->1550|3910->1556|3969->1588|3984->1594|4041->1630|4085->1647|4095->1648|4124->1656|4214->1719|4224->1720|4254->1729|4323->1771|4371->1798|4445->1845|4460->1851|4521->1891|4718->2061|4733->2067|4794->2107|5014->2296|5048->2303|5123->2351|5138->2357|5189->2387
+                  LINES: 24->2|25->3|26->4|31->5|36->5|38->7|38->7|38->7|40->9|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|48->17|48->17|48->17|48->17|49->18|49->18|49->18|49->18|51->20|52->21|56->25|56->25|56->25|57->26|58->27|58->27|58->27|59->28|60->29|61->30|73->42|73->42|73->42|74->43|75->44|75->44|75->44|76->45|76->45|76->45|77->46|77->46|77->46|78->47|79->48|80->49|80->49|80->49|80->49|81->50|81->50|81->50|82->51|82->51|82->51|85->54|85->54|85->54|86->55|86->55|88->57|88->57|88->57|92->61|92->61|92->61|97->66|98->67|103->72|103->72|103->72
                   -- GENERATED --
               */
           

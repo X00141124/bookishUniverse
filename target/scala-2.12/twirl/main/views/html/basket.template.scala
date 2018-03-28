@@ -55,7 +55,6 @@ Seq[Any](format.raw/*1.35*/("""
 			<!-- The header row-->
 			<tr>
 				<th>Name</th>
-				<th>Description</th>
 				<th>Item Price</th>
 				<th>Total</th>
 				<th>Quantity</th>
@@ -64,37 +63,36 @@ Seq[Any](format.raw/*1.35*/("""
 			</tr>
 			</thead>
 			<tbody>
-                """),_display_(/*35.18*/if(customer.getBasket() != null)/*35.50*/ {_display_(Seq[Any](format.raw/*35.52*/("""
-                    """),format.raw/*36.21*/("""<!-- Start of For loop - For each p in products add a row -->
-                    """),_display_(/*37.22*/for(i <- customer.getBasket().getBasketItems()) yield /*37.69*/ {_display_(Seq[Any](format.raw/*37.71*/("""
-                    """),format.raw/*38.21*/("""<tr>
-                        <td>"""),_display_(/*39.30*/i/*39.31*/.getProduct.getName),format.raw/*39.50*/("""</td>
-                        <td>"""),_display_(/*40.30*/i/*40.31*/.getProduct.getDescription()),format.raw/*40.59*/("""</td>
-                        <td>&euro; """),_display_(/*41.37*/("%.2f".format(i.getPrice))),format.raw/*41.64*/("""</td>
-                        <td>&euro; """),_display_(/*42.37*/("%.2f".format(i.getItemTotal))),format.raw/*42.68*/("""</td>
-                        <td>"""),_display_(/*43.30*/i/*43.31*/.getQuantity()),format.raw/*43.45*/("""</td>
-                        <td><a href=""""),_display_(/*44.39*/routes/*44.45*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*44.77*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a></td>
-                        <td><a href=""""),_display_(/*45.39*/routes/*45.45*/.ShoppingCtrl.addOne(i.getId)),format.raw/*45.74*/(""""><span class="glyphicon glyphicon-plus-sign"></span></a></td>
+                """),_display_(/*34.18*/if(customer.getBasket() != null)/*34.50*/ {_display_(Seq[Any](format.raw/*34.52*/("""
+                    """),format.raw/*35.21*/("""<!-- Start of For loop - For each p in products add a row -->
+                    """),_display_(/*36.22*/for(i <- customer.getBasket().getBasketItems()) yield /*36.69*/ {_display_(Seq[Any](format.raw/*36.71*/("""
+                    """),format.raw/*37.21*/("""<tr>
+                        <td>"""),_display_(/*38.30*/i/*38.31*/.getProduct.getName),format.raw/*38.50*/("""</td>
+                        <td>&euro; """),_display_(/*39.37*/("%.2f".format(i.getPrice))),format.raw/*39.64*/("""</td>
+                        <td>&euro; """),_display_(/*40.37*/("%.2f".format(i.getItemTotal))),format.raw/*40.68*/("""</td>
+                        <td>"""),_display_(/*41.30*/i/*41.31*/.getQuantity()),format.raw/*41.45*/("""</td>
+                        <td><a href=""""),_display_(/*42.39*/routes/*42.45*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*42.77*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a></td>
+                        <td><a href=""""),_display_(/*43.39*/routes/*43.45*/.ShoppingCtrl.addOne(i.getId)),format.raw/*43.74*/(""""><span class="glyphicon glyphicon-plus-sign"></span></a></td>
                     </tr>
-                    """)))}),format.raw/*47.22*/("""<!-- End of For loop -->
-              """)))}),format.raw/*48.16*/("""
-			"""),format.raw/*49.4*/("""</tbody>
+                    """)))}),format.raw/*45.22*/("""<!-- End of For loop -->
+              """)))}),format.raw/*46.16*/("""
+			"""),format.raw/*47.4*/("""</tbody>
 		</table>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-right"><strong>Basket Total: &euro; """),_display_(/*53.69*/("%.2f".format(customer.getBasket.getBasketTotal))),format.raw/*53.119*/("""</strong></p>
+                <p class="text-right"><strong>Basket Total: &euro; """),_display_(/*51.69*/("%.2f".format(customer.getBasket.getBasketTotal))),format.raw/*51.119*/("""</strong></p>
             </div>  
         </div>
         <div class="row">
             <div class="col-md-6">
                 <p class="text-right">
-                    <a href=""""),_display_(/*59.31*/routes/*59.37*/.ShoppingCtrl.emptyBasket()),format.raw/*59.64*/("""" class="btn btn-danger btn-sm" onclick="return confirmDel();">
+                    <a href=""""),_display_(/*57.31*/routes/*57.37*/.ShoppingCtrl.emptyBasket()),format.raw/*57.64*/("""" class="btn btn-danger btn-sm" onclick="return confirmDel();">
                     <span class="glyphicon glyphicon-trash"></span> Empty Basket</a>
                 </p>
             </div>  
             <div class="col-md-6">
                 <p class="text-right">
-                    <a href=""""),_display_(/*65.31*/routes/*65.37*/.ShoppingCtrl.placeOrder()),format.raw/*65.63*/("""" class="btn btn-success btn-sm">
+                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.ShoppingCtrl.placeOrder()),format.raw/*63.63*/("""" class="btn btn-success btn-sm">
                     <span class="glyphicon glyphicon-euro"></span> Place Order</a>
                 </p>
             </div>  
@@ -104,10 +102,10 @@ Seq[Any](format.raw/*1.35*/("""
 
 <script>
 	// JavaScript function returns true if user clicks yes, otherwise, false
-	function confirmDel() """),format.raw/*75.24*/("""{"""),format.raw/*75.25*/("""
-		"""),format.raw/*76.3*/("""return confirm('Are you sure?');
-	"""),format.raw/*77.2*/("""}"""),format.raw/*77.3*/("""
-"""),format.raw/*78.1*/("""</script>
+	function confirmDel() """),format.raw/*73.24*/("""{"""),format.raw/*73.25*/("""
+		"""),format.raw/*74.3*/("""return confirm('Are you sure?');
+	"""),format.raw/*75.2*/("""}"""),format.raw/*75.3*/("""
+"""),format.raw/*76.1*/("""</script>
 """)))}))
       }
     }
@@ -124,11 +122,11 @@ Seq[Any](format.raw/*1.35*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 20 12:50:56 GMT 2018
+                  DATE: Wed Mar 28 15:04:11 IST 2018
                   SOURCE: /home/wdd/webapps/bookishUniverse/app/views/basket.scala.html
-                  HASH: 6e7ba265a2942f9da9e4bb6f61c4be0938fbf9dc
-                  MATRIX: 964->1|1070->38|1106->68|1138->94|1192->34|1221->119|1248->120|1319->166|1360->199|1399->201|1429->204|1502->251|1543->283|1583->285|1616->291|1687->335|1701->340|1737->355|1770->361|1810->371|1842->376|2196->703|2237->735|2277->737|2326->758|2436->841|2499->888|2539->890|2588->911|2649->945|2659->946|2699->965|2761->1000|2771->1001|2820->1029|2889->1071|2937->1098|3006->1140|3058->1171|3120->1206|3130->1207|3165->1221|3236->1265|3251->1271|3304->1303|3433->1405|3448->1411|3498->1440|3639->1550|3710->1590|3741->1594|3918->1744|3990->1794|4197->1974|4212->1980|4260->2007|4582->2302|4597->2308|4644->2334|4971->2633|5000->2634|5030->2637|5091->2671|5119->2672|5147->2673
-                  LINES: 28->1|31->4|32->5|33->6|36->1|39->7|40->8|41->9|41->9|41->9|44->12|47->15|47->15|47->15|48->16|49->17|49->17|49->17|50->18|51->19|53->21|67->35|67->35|67->35|68->36|69->37|69->37|69->37|70->38|71->39|71->39|71->39|72->40|72->40|72->40|73->41|73->41|74->42|74->42|75->43|75->43|75->43|76->44|76->44|76->44|77->45|77->45|77->45|79->47|80->48|81->49|85->53|85->53|91->59|91->59|91->59|97->65|97->65|97->65|107->75|107->75|108->76|109->77|109->77|110->78
+                  HASH: f8f518f39eed03eac8234ac0e8da549cc293672c
+                  MATRIX: 964->1|1070->38|1106->68|1138->94|1192->34|1221->119|1248->120|1319->166|1360->199|1399->201|1429->204|1502->251|1543->283|1583->285|1616->291|1687->335|1701->340|1737->355|1770->361|1810->371|1842->376|2171->678|2212->710|2252->712|2301->733|2411->816|2474->863|2514->865|2563->886|2624->920|2634->921|2674->940|2743->982|2791->1009|2860->1051|2912->1082|2974->1117|2984->1118|3019->1132|3090->1176|3105->1182|3158->1214|3287->1316|3302->1322|3352->1351|3493->1461|3564->1501|3595->1505|3772->1655|3844->1705|4051->1885|4066->1891|4114->1918|4436->2213|4451->2219|4498->2245|4825->2544|4854->2545|4884->2548|4945->2582|4973->2583|5001->2584
+                  LINES: 28->1|31->4|32->5|33->6|36->1|39->7|40->8|41->9|41->9|41->9|44->12|47->15|47->15|47->15|48->16|49->17|49->17|49->17|50->18|51->19|53->21|66->34|66->34|66->34|67->35|68->36|68->36|68->36|69->37|70->38|70->38|70->38|71->39|71->39|72->40|72->40|73->41|73->41|73->41|74->42|74->42|74->42|75->43|75->43|75->43|77->45|78->46|79->47|83->51|83->51|89->57|89->57|89->57|95->63|95->63|95->63|105->73|105->73|106->74|107->75|107->75|108->76
                   -- GENERATED --
               */
           

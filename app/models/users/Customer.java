@@ -23,14 +23,28 @@ public class Customer extends User{
     private String postCode;
     private String creditCard;
 
-
+    // Customer has one basket.
+    // Customer is the owner (foreign key will be added to Basket
+    @OneToOne(mappedBy="customer", cascade = CascadeType.ALL)
     private Basket basket;
 
-
+    // Customer can has many ShopOrders.
+    // Customer is the owner (forieng key will be added to Basket
+    @OneToMany(mappedBy="customer", cascade = CascadeType.ALL)
     private List<ShopOrder> orders;
 	
     public Customer(){
     }
+    
+    public Customer(String email, String role, String name, String password, String street1, String street2, String town, String postCode, String creditCard)
+	{
+		super(email, role, name, password);
+        this.street1 = street1;
+        this.street2 = street2;
+        this.town = town;
+        this.postCode = postCode;
+		this.creditCard = creditCard;
+	}
 
     public String getStreet1() {
         return street1;
