@@ -21,6 +21,8 @@ public class Product extends Model {
         @Constraints.Required
         @ManyToOne
         public Author author;
+        @Constraints.Required
+        private String description;
 
         @Constraints.Required
         @ManyToOne
@@ -66,10 +68,11 @@ public class Product extends Model {
         }
     
         // Constructor to initialise object
-        public Product(Long id, String title, Author author, Publisher publisher, int stock, double price) {
+        public Product(Long id, String title, Author author, String description, Publisher publisher, int stock, double price) {
             this.id = id;
             this.title = title;
             this.author = author;
+            this.description = description;
             this.publisher = publisher;
             this.stock = stock;
             this.price = price;
@@ -88,6 +91,9 @@ public class Product extends Model {
         public void setName(String title) {
             this.title = title;
         }
+        public String getDescription() {
+            return description;
+        }
         public int getStock() { 
             return stock; 
         } 
@@ -105,6 +111,9 @@ public class Product extends Model {
         }
         public void setCatSelect(List<Long> catSelect){
             this.catSelect = catSelect;
+        }
+        public void setDescription(String description){
+            this.description = description;
         }
         public Author getAuthor() {
             return author;

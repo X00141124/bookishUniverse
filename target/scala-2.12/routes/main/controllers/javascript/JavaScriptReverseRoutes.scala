@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/bookishUniverse/conf/routes
-// @DATE:Tue Mar 20 12:50:55 GMT 2018
+// @DATE:Wed Apr 04 18:45:31 IST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 

@@ -8,6 +8,10 @@ import play.data.format.*;
 import play.data.validation.*;
 
 @Entity
+@Table(name = "user")
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="role")
+@DiscriminatorValue("user")
 public class User extends Model {
     @Id
     private String email;

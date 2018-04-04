@@ -11,7 +11,6 @@ import models.products.*;
 import models.users.*;
 
 
-// Product entity managed by Ebean
 @Entity
 public class Basket extends Model {
 
